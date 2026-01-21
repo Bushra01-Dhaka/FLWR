@@ -18,7 +18,7 @@ const Banner = () => {
       <div className="absolute inset-0 bg-black/50"></div>
 
       {/* Content */}
-      <div className="relative hero min-h-screen p-10 lg:px-20">
+      <div className="relative hero min-h-screen p-10 py-20 lg:px-20">
         <div className="hero-content flex flex-col lg:flex-row justify-between items-center text-neutral-content w-full">
           
           {/* Text Section */}

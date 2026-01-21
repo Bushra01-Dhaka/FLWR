@@ -1,0 +1,145 @@
+import { useEffect, useState } from "react";
+import { Link, NavLink } from "react-router";
+const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const navItems = (
+    <>
+      <li className="py-2 lg:py-0 text-2xl lg:text-[16px]">
+        <NavLink
+          to="/ourGoal"
+          className={({ isActive }) =>
+            isActive ? "text-primary font-semibold" : ""
+          }
+        >
+          Our Goal
+        </NavLink>
+      </li>
+
+      <li className="py-2 lg:py-0 text-2xl lg:text-[16px]">
+        <NavLink
+          to="/donateCloths"
+          className={({ isActive }) =>
+            isActive ? "text-primary font-semibold" : ""
+          }
+        >
+          Donate Cloths
+        </NavLink>
+      </li>
+
+      <li className="py-2 lg:py-0 text-2xl lg:text-[16px]">
+        <NavLink
+          to="/browseCollections"
+          className={({ isActive }) =>
+            isActive ? "text-primary font-semibold" : ""
+          }
+        >
+          Browse Collections
+        </NavLink>
+      </li>
+
+      <li className="py-2 lg:py-0 text-2xl lg:text-[16px]">
+        <NavLink
+          to="/contactUs"
+          className={({ isActive }) =>
+            isActive ? "text-primary font-semibold" : ""
+          }
+        >
+          Contact
+        </NavLink>
+      </li>
+
+      {/* {
+        user && 
+      <li className="py-2 lg:py-0 text-2xl lg:text-[16px]">
+        <NavLink
+          to="/dashboard"
+          className={({ isActive }) =>
+            isActive ? "text-primary font-semibold" : ""
+          }
+        >
+          Dashboard
+        </NavLink>
+      </li>
+
+      } */}
+    </>
+  );
+
+  return (
+    <div
+      className={`navbar fixed top-0 left-0 w-full md:max-w-screen-2xl mx-auto 
+  lg:px-20 px-10 z-50 transition-all duration-300 
+  ${scrolled ? "bg-secondary/40 backdrop-blur-md shadow-md" : "bg-transparent"}`}
+    >
+      <div className="navbar-start">
+        <div className="dropdown">
+          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              {" "}
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />{" "}
+            </svg>
+          </div>
+          <ul
+            tabIndex="-1"
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+          >
+            {navItems}
+          </ul>
+        </div>
+        <Link to="/">
+          <div className="flex justify-center items-center">
+            <h2 className="text-lg lg:text-2xl font-bold text-info">FLWR</h2>
+            <img
+              className="w-[30px] h-[30px] object-cover"
+              src="/daisy.png"
+              alt=""
+            />
+          </div>
+        </Link>
+      </div>
+      <div className="navbar-center hidden lg:flex">
+        <ul className="menu menu-horizontal px-1">{navItems}</ul>
+      </div>
+
+      <div className="navbar-end">
+        <Link to="/register">
+          <button className="btn btn-sm btn-info font-bold shadow-2xl shadow-info border-0 bg-linear-to-r text-secondary">
+            Sign Up
+          </button>
+        </Link>
+        {/* {
+          user ?  <button   className="btn hover:text-black font-bold btn-outline btn-primary btn-sm hover:shadow-2xl hover:shadow-primary">Log Out</button> 
+          :
+          <Link to="/register">
+          <button className="btn btn-sm btn-primary font-bold shadow-2xl shadow-primary border-0 bg-linear-to-r text-black hover:bg-linear-to-l from-primary to-accent">Sign Up</button>
+        </Link>
+
+        } */}
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;
