@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+@import "tailwindcss";
+@plugin "daisyui" {
+   themes: light --default, dark ;
+ }
+
+@plugin "daisyui/theme" {
+   name: "light";
+   default: true;
+  --color-primary: #152928;
+  --color-secondary: #ECE9E2;
+  --color-accent: #8BAB94;
+}
+
+.font-outfit{
+  font-family: "DM Serif Display", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
