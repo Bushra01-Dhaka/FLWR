@@ -1,11 +1,13 @@
 import Banner from "../../Components/HomeCompo/Banner"
-import Features from "../../Components/HomeCompo/Features"
+// import Features from "../../Components/HomeCompo/Features"
+import Occasions from "../../Components/HomeCompo/Occasions"
 
 const Home = () => {
   return (
     <div>
        <Banner></Banner>
-       <Features></Features>
+       {/* <Features></Features> */}
+       <Occasions></Occasions>
     </div>
   )
 }
