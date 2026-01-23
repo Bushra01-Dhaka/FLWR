@@ -1,8 +1,8 @@
 import { FaMapMarkerAlt, FaStar } from "react-icons/fa";
-import stuff1 from "../../assets/stuff1.jpg"
-import stuff2 from "../../assets/stuff2.jpg"
-import stuff3 from "../../assets/stuff3.jpg"
-import stuff4 from "../../assets/stuff4.jpg"
+import stuff1 from "../../assets/stuff1.jpg";
+import stuff2 from "../../assets/stuff2.jpg";
+import stuff3 from "../../assets/stuff3.jpg";
+import stuff4 from "../../assets/stuff4.jpg";
 
 const florists = [
   {
@@ -12,7 +12,7 @@ const florists = [
     experience: "6 years",
     specialty: "Soft & romantic bouquets",
     rating: 4.8,
-    image: `${stuff1}`
+    image: `${stuff1}`,
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const florists = [
     experience: "4 years",
     specialty: "Warm & boho arrangements",
     rating: 4.6,
-    image: `${stuff2}`
+    image: `${stuff2}`,
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const florists = [
     experience: "5 years",
     specialty: "Colorful & wild florals",
     rating: 4.7,
-    image: `${stuff3}`
+    image: `${stuff3}`,
   },
   {
     id: 4,
@@ -39,15 +39,14 @@ const florists = [
     experience: "8 years",
     specialty: "Minimal & elegant designs",
     rating: 4.9,
-    image: `${stuff4}`
-  }
+    image: `${stuff4}`,
+  },
 ];
 
 const AvailableFlorists = () => {
   return (
     <section className="py-24 px-6 lg:px-20 bg-primary/5">
       <div className="max-w-6xl mx-auto">
-
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-info font-outfit mb-4">
@@ -62,6 +61,10 @@ const AvailableFlorists = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {florists.map((florist) => (
             <div
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="100"
+              data-aos-duration="1500"
               key={florist.id}
               className="bg-secondary rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
             >
@@ -99,7 +102,6 @@ const AvailableFlorists = () => {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
