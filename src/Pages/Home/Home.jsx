@@ -1,3 +1,4 @@
+import AvailableFlorists from "../../Components/HomeCompo/AvailableFlorists";
 import Banner from "../../Components/HomeCompo/Banner";
 import Occasions from "../../Components/HomeCompo/Occasions";
 import AboutUs from "../AboutUs/AboutUs";
@@ -10,6 +11,7 @@ const Home = () => {
       <Occasions></Occasions>
       <AboutUs></AboutUs>
       <BouquetCollection1></BouquetCollection1>
+      <AvailableFlorists></AvailableFlorists>
     </div>
   );
 };
