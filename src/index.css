@@ -20,3 +20,11 @@
   font-style: normal;
 }
 
+.mySwiper {
+  padding-bottom: 60px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}

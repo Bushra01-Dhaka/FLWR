@@ -17,12 +17,12 @@ const Navbar = () => {
     <>
       <li className="py-2 lg:py-0 text-2xl lg:text-[16px]">
         <NavLink
-          to="/ourGoal"
+          to="/ourStory"
           className={({ isActive }) =>
             isActive ? "text-primary font-semibold" : ""
           }
         >
-          Our Goal
+          Our Story
         </NavLink>
       </li>
 
@@ -78,7 +78,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`navbar fixed top-0 left-0 w-full md:max-w-screen-2xl mx-auto 
+      className={`navbar fixed top-0 left-0 w-full lg:max-w-screen-2xl lg:mx-auto 
   lg:px-20 px-10 z-50 transition-all duration-300 
   ${scrolled ? "bg-secondary/40 backdrop-blur-md shadow-md" : "bg-transparent"}`}
     >
