@@ -17,7 +17,7 @@ const Register = () => {
   };
   return (
     <div className="flex justify-center items-center bg-secondary">
-      <div className="flex flex-col lg:flex-row justify-between items-start gap-6">
+      <div className="flex flex-col-reverse lg:flex-row justify-between items-start gap-6">
         {/* left */}
         <div className="flex-1">
           <img src={registerImg} alt="" />
