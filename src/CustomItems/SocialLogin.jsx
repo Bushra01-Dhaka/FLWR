@@ -1,14 +1,17 @@
 
 import { useLocation, useNavigate } from "react-router";
 import { FaGoogle } from "react-icons/fa";
+import useAuth from "../Hook/useAuth";
+import toast from "react-hot-toast";
 
 const SocialLogin = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const from = location.state?.from || "/";
+  const {googleSignIn} = useAuth();
 
   const handleGoogleLogin = () => {
-    googleLogIn().then((result) => {
+    googleSignIn().then((result) => {
       const user = result.user;
       console.log(user);
 
@@ -21,18 +24,21 @@ const SocialLogin = () => {
         created_at: new Date().toISOString(),
       };
 
-      axiosPublic
-        .post("/users", userInfo)
-        .then((res) => {
-          console.log("User data has been stored", res.data);
-          toast.success("Logged in Successfully!");
-          // navigate
-          navigate(from);
-        })
-        .catch((error) => {
-          console.log(error);
-          toast.error("Logged in Fail.");
-        });
+      toast.success("Logged in Successfully!");
+      navigate("/")
+
+      // axiosPublic
+      //   .post("/users", userInfo)
+      //   .then((res) => {
+      //     console.log("User data has been stored", res.data);
+      //     toast.success("Logged in Successfully!");
+      //     // navigate
+      //     navigate(from);
+      //   })
+      //   .catch((error) => {
+      //     console.log(error);
+      //     toast.error("Logged in Fail.");
+      //   });
     });
   };
 
