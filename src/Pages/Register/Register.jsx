@@ -1,9 +1,12 @@
 import { useForm } from "react-hook-form";
 import registerImg from "../../assets/register.jpg";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import SocialLogin from "../../CustomItems/SocialLogin";
+import useAuth from "../../Hook/useAuth";
+import toast from "react-hot-toast";
 
 const Register = () => {
+  const { createUser,  updateUserProfile } = useAuth();
   const {
     register,
     handleSubmit,
@@ -12,9 +15,55 @@ const Register = () => {
     formState: { errors },
   } = useForm();
 
+  const navigate = useNavigate();
+
+
   const onSubmit = (data) => {
     console.log(data);
+
+    createUser(data.email, data.password).then((result) => {
+      const loggedUser = result.user;
+      console.log("Logged User", loggedUser);
+
+
+      const userInfo = {
+        name: data.name,
+        email: data.email,
+        role: "user",
+        createdAt: new Date().toISOString(),
+      }
+
+      const profileInfo = {
+        displayName : data.name,
+        photoURL: data.photo,
+      }
+
+      updateUserProfile(profileInfo)
+      .then(() => {
+        console.log("Name and Image are updated");
+        refetch;
+      })
+      .catch(error => {
+        console.error(error);
+      })
+
+      toast("Account Created Successfully!", {
+        style: {
+          borderRadius: "10px",
+          background: "#362E2B",
+          color: "#ECE9E2",
+        },
+      });
+
+      navigate("/")
+
+
+    })
+
   };
+
+
+
   return (
     <div className="flex justify-center items-center bg-secondary">
       <div className="flex flex-col-reverse lg:flex-row justify-between items-start gap-6">

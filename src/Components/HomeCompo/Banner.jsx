@@ -18,13 +18,13 @@ const Banner = () => {
       <div className="absolute inset-0 bg-black/10"></div>
 
       {/* Content */}
-      <div className="relative hero  p-10 py-20 lg:px-20">
+      <div className="relative hero  lg:px-10 py-20 lg:px-20">
         <div className="hero-content flex flex-col lg:flex-row justify-between items-center text-neutral-content w-full">
           {/* Text Section */}
           <div
             data-aos="fade-right"
             data-aos-duration="1500"
-            className="lg:flex-1 w-full  bg-[#362E2B]/90 lg:relative left-10 p-4 lg:p-10 rounded-xl shadow-2xl shadow-primary text-start backdrop-blur-sm"
+            className="flex-1 w-full  bg-[#362E2B]/90 lg:relative left-10 p-4 lg:p-10 rounded-xl shadow-2xl shadow-primary text-start backdrop-blur-sm"
           >
             <h1 className="mb-5 font-outfit text-4xl lg:text-5xl text-secondary font-bold leading-tight">
               Let flowers say what words cannot

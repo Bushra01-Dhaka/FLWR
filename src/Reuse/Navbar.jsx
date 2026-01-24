@@ -1,7 +1,12 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router";
+import useAuth from "../Hook/useAuth";
+import userIcon from "../assets/user.gif";
+
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const { user, logOut } = useAuth();
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -12,6 +17,16 @@ const Navbar = () => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleLogOut = () => {
+    logOut()
+    .then(result => {
+      console.log(result.user)
+    })
+    .catch(error => {
+      console.error(error);
+    })
+  }
 
   const navItems = (
     <>
@@ -124,19 +139,47 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-end">
-        <Link to="/register">
-          <button className="btn btn-sm btn-info font-bold shadow-2xl shadow-info border-0 bg-linear-to-r text-secondary">
-            Sign Up
-          </button>
-        </Link>
-        {/* {
-          user ?  <button   className="btn hover:text-black font-bold btn-outline btn-primary btn-sm hover:shadow-2xl hover:shadow-primary">Log Out</button> 
-          :
-          <Link to="/register">
-          <button className="btn btn-sm btn-primary font-bold shadow-2xl shadow-primary border-0 bg-linear-to-r text-black hover:bg-linear-to-l from-primary to-accent">Sign Up</button>
-        </Link>
+        {user ? (
+          <div className="relative mr-8 lg:mr-0">
+            {/* Avatar */}
+            <div className="relative">
+              <img
+                src={user.photoURL || userIcon}
+                onClick={() => setOpen(!open)}
+                className="w-[40px] h-[40px] cursor-pointer object-cover rounded-full border-2 border-primary"
+                alt="User"
+              />
 
-        } */}
+              {/* Dropdown */}
+              <div
+                className={`absolute right-0 mt-3 w-56 bg-info text-secondary rounded-xl shadow-xl p-4
+        transform transition-all duration-300 origin-top
+        ${open ? "scale-y-100 opacity-100" : "scale-y-0 opacity-0 pointer-events-none"}
+        `}
+              >
+                <h4 className="font-semibold text-sm">
+                  {user.displayName || "FLWR User"}
+                </h4>
+                <p className="text-xs text-secondary/70 mt-1">{user.email}</p>
+
+                <hr className="my-3 opacity-30" />
+
+                <button className="btn btn-sm btn-secondary font-bold text-info w-full">
+                  Dashboard
+                </button>
+                <button onClick={handleLogOut} className="btn btn-outline btn-secondary w-full mt-2 btn-sm font-bold hover:text-info">
+                  Log Out
+                </button>
+              </div>
+            </div>
+          </div>
+        ) : (
+          <Link to="/register">
+            <button className="btn btn-sm btn-info font-bold shadow-2xl shadow-primary border-0 bg-linear-to-r text-secondary lg:mr-0 mr-6 ">
+              Sign Up
+            </button>
+          </Link>
+        )}
       </div>
     </div>
   );

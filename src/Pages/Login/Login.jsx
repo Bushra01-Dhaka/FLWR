@@ -1,7 +1,9 @@
 import { useForm } from "react-hook-form";
 import registerImg from "../../assets/register.jpg";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import SocialLogin from "../../CustomItems/SocialLogin";
+import useAuth from "../../Hook/useAuth";
+import toast from "react-hot-toast";
 
 const Login = () => {
   const {
@@ -11,9 +13,29 @@ const Login = () => {
     refetch,
     formState: { errors },
   } = useForm();
+  const {logIn} = useAuth();
+  const navigate = useNavigate();
 
   const onSubmit = (data) => {
     console.log(data);
+
+    logIn(data.email, data.password)
+    .then(result => {
+      const loggedUser = result.user;
+      console.log("logged user:", loggedUser);
+
+      toast("Log in Successfully!", {
+        style: {
+          borderRadius: "10px",
+          background: "#362E2B",
+          color: "#ECE9E2",
+        },
+      });
+
+      navigate("/")
+    })
+
+
   };
   return (
     <div className="flex justify-center items-center bg-secondary">
