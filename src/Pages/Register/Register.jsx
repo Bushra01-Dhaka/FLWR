@@ -1,12 +1,14 @@
 import { useForm } from "react-hook-form";
 import registerImg from "../../assets/register.jpg";
-import { Link, useNavigate } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
 import SocialLogin from "../../CustomItems/SocialLogin";
 import useAuth from "../../Hook/useAuth";
 import toast from "react-hot-toast";
+import useAxios from "../../Hook/useAxios";
 
 const Register = () => {
   const { createUser,  updateUserProfile } = useAuth();
+  const axiosPublic = useAxios();
   const {
     register,
     handleSubmit,
@@ -16,6 +18,8 @@ const Register = () => {
   } = useForm();
 
   const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from || "/";
 
 
   const onSubmit = (data) => {
@@ -32,6 +36,10 @@ const Register = () => {
         role: "user",
         createdAt: new Date().toISOString(),
       }
+
+      const userRes = axiosPublic.post("/users", userInfo);
+      console.log("User", userRes);
+
 
       const profileInfo = {
         displayName : data.name,
@@ -55,7 +63,7 @@ const Register = () => {
         },
       });
 
-      navigate("/")
+      navigate(from);
 
 
     })

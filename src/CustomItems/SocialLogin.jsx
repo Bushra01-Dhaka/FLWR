@@ -3,12 +3,14 @@ import { useLocation, useNavigate } from "react-router";
 import { FaGoogle } from "react-icons/fa";
 import useAuth from "../Hook/useAuth";
 import toast from "react-hot-toast";
+import useAxios from "../Hook/useAxios";
 
 const SocialLogin = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const from = location.state?.from || "/";
   const {googleSignIn} = useAuth();
+  const axiosPublic = useAxios();
 
   const handleGoogleLogin = () => {
     googleSignIn().then((result) => {
@@ -19,26 +21,24 @@ const SocialLogin = () => {
       const userInfo = {
         name: user?.displayName,
         email: user?.email,
-        photo: user?.photoURL,
+        // photo: user?.photoURL,
         role: "user",
         created_at: new Date().toISOString(),
       };
 
-      toast.success("Logged in Successfully!");
-      navigate("/")
 
-      // axiosPublic
-      //   .post("/users", userInfo)
-      //   .then((res) => {
-      //     console.log("User data has been stored", res.data);
-      //     toast.success("Logged in Successfully!");
-      //     // navigate
-      //     navigate(from);
-      //   })
-      //   .catch((error) => {
-      //     console.log(error);
-      //     toast.error("Logged in Fail.");
-      //   });
+      axiosPublic
+        .post("/users", userInfo)
+        .then((res) => {
+          console.log("User data has been stored", res.data);
+          toast.success("Logged in Successfully!");
+          // navigate
+          navigate(from);
+        })
+        .catch((error) => {
+          console.log(error);
+          toast.error("Logged in Fail.");
+        });
     });
   };
 

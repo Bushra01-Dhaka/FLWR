@@ -4,9 +4,23 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import bouquets from "/public/data.json";
+import { useQuery } from "@tanstack/react-query";
+import useAxiosSecure from "../../../Hook/useAxiosSecure";
+
 
 const BouquetCollection1 = () => {
+
+  const axiosSecure = useAxiosSecure();
+
+
+  const {data: bouquets = []} = useQuery({
+    queryKey: ["bouquets-data"],
+    queryFn: async() => {
+       const res = await axiosSecure.get("/bouquets");
+       return res.data;
+        
+    }
+  })
   return (
     <section className="py-20 px-6 lg:px-20 bg-info">
       <div className="text-center mb-14">
