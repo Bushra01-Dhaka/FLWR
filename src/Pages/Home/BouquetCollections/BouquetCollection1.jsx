@@ -22,7 +22,9 @@ const BouquetCollection1 = () => {
     }
   })
   return (
-    <section className="py-20 px-6 lg:px-20 bg-info">
+    <section 
+     data-aos="fade-up" data-aos-duration="1500"
+    className="py-20 px-6 lg:px-20 bg-info">
       <div className="text-center mb-14">
         <h2 className="text-4xl font-semibold font-outfit text-secondary">
           FLWR Bouquet Collections
