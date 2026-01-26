@@ -1,6 +1,8 @@
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import PlantCollections from "../Home/Plants/PlantCollections";
 import FlowerCollection from "../FlowerCollection/FlowerCollection";
+import GiftCardsCollection from "../GiftCardsCollection/GiftCardsCollection";
+import HamperCollections from "../HamperCollections/HamperCollections";
 
 const OurServices = () => {
   return (
@@ -28,10 +30,10 @@ const OurServices = () => {
             <PlantCollections></PlantCollections>
           </TabPanel>
           <TabPanel>
-            <h2>All Hampers data will show here</h2>
+            <HamperCollections></HamperCollections>
           </TabPanel>
           <TabPanel>
-            <h2>All Gift Cards data will show here</h2>
+            <GiftCardsCollection></GiftCardsCollection>
           </TabPanel>
         </Tabs>
       </div>

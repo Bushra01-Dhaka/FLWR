@@ -1,0 +1,58 @@
+[
+  {
+    "id": "gc-001",
+    "title": "Birthday Gift Card",
+    "short_description": "A timeless gift for any occasion.",
+    "description": "The Classic Floral Gift Card lets your loved ones choose their favorite bouquets or plants from FLWR. Perfect when you want to gift beauty but leave the choice to them.",
+    "price": 25,
+    "type": "general",
+    "occasion": ["birthday", "thank you", "celebration"],
+    "design_theme": "soft florals",
+    "color_palette": ["blush pink", "cream", "sage green"],
+    "validity": "6 months",
+    "delivery": ["email", "printable"],
+    "image": "https://www.kroger.com/product/images/xlarge/front/0005958434403"
+  },
+  {
+    "id": "gc-002",
+    "title": "Love & Romance Gift Card",
+    "short_description": "For heartfelt moments and deep emotions.",
+    "description": "Designed for romantic gestures, the Love & Romance Gift Card is ideal for anniversaries, proposals, and Valentine’s surprises. Let flowers speak love, your way.",
+    "price": 50,
+    "type": "romantic",
+    "occasion": ["anniversary", "valentine", "wedding"],
+    "design_theme": "romantic elegance",
+    "color_palette": ["deep red", "soft pink", "gold"],
+    "validity": "12 months",
+    "delivery": ["email", "printable"],
+    "image": "https://cdn11.bigcommerce.com/s-7f9rxjod7c/images/stencil/590x590/products/413355/1039623/CARD24JVLMOTH250__64309.1704826042.jpg?c=2"
+  },
+  {
+    "id": "gc-003",
+    "title": "Calm & Care Gift Card",
+    "short_description": "A gentle way to show you care.",
+    "description": "The Calm & Care Gift Card is perfect for sympathy, self-care, or wellness gifts. Featuring soothing tones and natural designs, it’s made to bring comfort and calm.",
+    "price": 40,
+    "type": "wellness",
+    "occasion": ["sympathy", "self-love", "get well"],
+    "design_theme": "minimal calm",
+    "color_palette": ["ivory", "soft green", "beige"],
+    "validity": "6 months",
+    "delivery": ["email", "printable"],
+    "image": "https://www.800flower.ae/cdn/shop/files/get-well-soon-card.jpg?v=1695649198"
+  },
+  {
+    "id": "gc-004",
+    "title": "Corporate Gift Card",
+    "short_description": "An elevated floral gifting experience.",
+    "description": "The Luxury Bloom Gift Card is curated for premium floral arrangements and rare indoor plants. Ideal for corporate gifting, weddings, or unforgettable moments.",
+    "price": 100,
+    "type": "premium",
+    "occasion": ["corporate", "wedding", "milestone"],
+    "design_theme": "modern luxury",
+    "color_palette": ["black", "ivory", "gold"],
+    "validity": "12 months",
+    "delivery": ["email", "printable"],
+    "image": "https://img.freepik.com/free-vector/christmas-card-template_23-2148774821.jpg"
+  }
+]

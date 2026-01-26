@@ -1,0 +1,161 @@
+[
+  {
+    "id": "hp-001",
+    "title": "Luxury Cream Tea Gift Hamper",
+    "short_description": "An elegant afternoon tea experience.",
+    "description": "The Luxury Cream Tea Gift Hamper is beautifully curated with buttery scones, clotted cream, premium strawberry preserves, and artisan tea blends. Perfect for refined moments and thoughtful gifting.",
+    "price": 85,
+    "category": "food & beverage",
+    "type": ["luxury", "classic"],
+    "occasion": ["birthday", "anniversary", "thank you"],
+    "items": [
+      "Fresh baked scones",
+      "Clotted cream",
+      "Strawberry preserve",
+      "Artisan tea selection"
+    ],
+    "dietary": ["vegetarian"],
+    "rating": 4.9,
+    "stock": 10,
+    "image": "https://i.ibb.co.com/DDCn5twy/hamper1.png"
+  },
+  {
+    "id": "hp-002",
+    "title": "Decadent Hot Chocolate Gift Hamper",
+    "short_description": "Rich, comforting chocolate indulgence.",
+    "description": "This Decadent Hot Chocolate Gift Hamper features premium cocoa blends, handmade marshmallows, chocolate flakes, and a ceramic mug. Designed for cozy nights and sweet moments.",
+    "price": 65,
+    "category": "food & beverage",
+    "type": ["comfort", "sweet"],
+    "occasion": ["winter", "self-care", "thank you"],
+    "items": [
+      "Premium cocoa powder",
+      "Handmade marshmallows",
+      "Chocolate flakes",
+      "Ceramic mug"
+    ],
+    "dietary": ["vegetarian"],
+    "rating": 4.7,
+    "stock": 14,
+    "image": "https://i.ibb.co.com/8nNGyk4z/hamper2.png"
+  },
+  {
+    "id": "hp-003",
+    "title": "Thank You Hamper",
+    "short_description": "A thoughtful way to say thanks.",
+    "description": "The Thank You Hamper includes gourmet snacks, herbal tea, and sweet treats curated to express appreciation with warmth and sincerity.",
+    "price": 55,
+    "category": "gifting",
+    "type": ["gratitude", "minimal"],
+    "occasion": ["thank you", "corporate"],
+    "items": [
+      "Gourmet biscuits",
+      "Herbal tea",
+      "Artisan chocolates"
+    ],
+    "dietary": ["vegetarian"],
+    "rating": 4.6,
+    "stock": 20,
+    "image": "https://i.ibb.co.com/HD5HNk6V/hamper3.jpg"
+  },
+  {
+    "id": "hp-004",
+    "title": "Get Well Soon Hamper",
+    "short_description": "Comfort and care when it matters most.",
+    "description": "Created to uplift and soothe, the Get Well Soon Hamper includes calming teas, nourishing snacks, and wellness essentials to support recovery.",
+    "price": 60,
+    "category": "wellness",
+    "type": ["care", "comfort"],
+    "occasion": ["get well", "sympathy"],
+    "items": [
+      "Chamomile tea",
+      "Honey jar",
+      "Healthy snack bars",
+      "Wellness note card"
+    ],
+    "dietary": ["vegetarian"],
+    "rating": 4.8,
+    "stock": 12,
+    "image": "https://i.ibb.co.com/qL86v3Fg/hamper4.webp"
+  },
+  {
+    "id": "hp-005",
+    "title": "The Cheese Lover Hamper",
+    "short_description": "A curated delight for cheese enthusiasts.",
+    "description": "The Cheese Lover Hamper brings together artisan cheeses, gourmet crackers, chutneys, and olives for a sophisticated tasting experience.",
+    "price": 90,
+    "category": "food & beverage",
+    "type": ["gourmet", "savory"],
+    "occasion": ["celebration", "housewarming"],
+    "items": [
+      "Artisan cheeses",
+      "Gourmet crackers",
+      "Fruit chutney",
+      "Marinated olives"
+    ],
+    "dietary": ["vegetarian"],
+    "rating": 4.9,
+    "stock": 8,
+    "image": "https://i.ibb.co.com/Mxw9Jx5Q/hamper5.webp"
+  },
+  {
+    "id": "hp-006",
+    "title": "British Cream Tea Hamper",
+    "short_description": "A classic British tea-time tradition.",
+    "description": "The British Cream Tea Hamper celebrates tradition with scones, clotted cream, preserves, and fine English tea blends.",
+    "price": 70,
+    "category": "food & beverage",
+    "type": ["traditional", "classic"],
+    "occasion": ["afternoon tea", "gift"],
+    "items": [
+      "Traditional scones",
+      "Clotted cream",
+      "Fruit jam",
+      "English breakfast tea"
+    ],
+    "dietary": ["vegetarian"],
+    "rating": 4.7,
+    "stock": 16,
+    "image": "https://i.ibb.co.com/QFJyKpns/hamper6.jpg"
+  },
+  {
+    "id": "hp-007",
+    "title": "Pamper Night In Hamper",
+    "short_description": "Relax, unwind, and indulge at home.",
+    "description": "The Pamper Night In Hamper includes scented candles, bath essentials, herbal teas, and treats for a calming self-care evening.",
+    "price": 75,
+    "category": "self-care",
+    "type": ["pamper", "relaxation"],
+    "occasion": ["self-love", "birthday"],
+    "items": [
+      "Scented candle",
+      "Bath salts",
+      "Herbal tea",
+      "Luxury chocolates"
+    ],
+    "dietary": ["vegetarian"],
+    "rating": 4.8,
+    "stock": 9,
+    "image": "https://i.ibb.co.com/1f4nTjfb/hamper7.webp"
+  },
+  {
+    "id": "hp-008",
+    "title": "The Vegan Hamper",
+    "short_description": "Plant-based treats with purpose.",
+    "description": "The Vegan Hamper features ethically sourced, plant-based snacks, teas, and sweet treats crafted for conscious and compassionate gifting.",
+    "price": 68,
+    "category": "food & beverage",
+    "type": ["vegan", "ethical"],
+    "occasion": ["birthday", "thank you", "wellness"],
+    "items": [
+      "Vegan snacks",
+      "Dairy-free chocolates",
+      "Organic tea blend",
+      "Nut mix"
+    ],
+    "dietary": ["vegan"],
+    "rating": 4.7,
+    "stock": 18,
+    "image": "https://i.ibb.co.com/twYrXwkk/hamper8.webp"
+  }
+]
