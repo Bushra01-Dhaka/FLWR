@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "eventType": "Birthday",
+    "title": "Elegant Garden Birthday Celebration",
+    "short_description": "A soft pastel floral setup designed to create a joyful and intimate birthday atmosphere.",
+    "description": "This birthday event was designed as a fresh garden-inspired celebration using seasonal blooms such as roses, daisies, and eucalyptus. The color palette focused on blush pink, cream, and soft green tones to create a calm yet cheerful mood. Floral arches framed the cake table while handcrafted centerpieces enhanced each guest table. Our team handled concept design, sourcing fresh flowers, venue styling, and on-site installation to ensure everything felt personal and elegant. The client wanted a celebration that felt warm and luxurious without being overwhelming, and this arrangement delivered exactly that experience.",
+    "client_recommendation": "“FLWR transformed my birthday into something truly magical. Every detail was thoughtfully arranged and the flowers stayed fresh all day.”",
+    "fulfillment_details": [
+      "Initial consultation and theme planning",
+      "Custom floral color palette selection",
+      "On-site floral installation and styling",
+      "Post-event cleanup and flower removal"
+    ],
+    "price": 650,
+    "advance_booking": "Minimum 1 month advance booking required",
+    "image": "https://i.ibb.co.com/vCfpDxXd/event1.jpg"
+  },
+  {
+    "id": 2,
+    "eventType": "Anniversary",
+    "title": "Romantic Anniversary Floral Experience",
+    "short_description": "An intimate floral arrangement designed to celebrate lasting love and connection.",
+    "description": "For this anniversary celebration, we created a romantic ambiance using deep red roses, white lilies, and soft candlelight accents. The setup included a floral backdrop, table arrangements, and personalized floral details that reflected the couple’s journey together. Our team carefully planned every element to ensure the space felt emotional, private, and memorable. From the entrance décor to the final petal placement, this event was styled to celebrate love in its most elegant form.",
+    "client_recommendation": "“The atmosphere FLWR created was beyond our expectations. It felt personal, emotional, and beautifully romantic.”",
+    "fulfillment_details": [
+      "Personalized floral concept design",
+      "Premium flower sourcing",
+      "Romantic lighting coordination",
+      "Full venue floral styling"
+    ],
+    "price": 900,
+    "advance_booking": "Minimum 1 month advance booking required",
+    "image": "https://i.ibb.co.com/qLHNBn7N/event2.jpg"
+  },
+  {
+    "id": 3,
+    "eventType": "Wedding",
+    "title": "Luxury Wedding Floral Styling",
+    "short_description": "A full-scale floral decoration designed for an unforgettable wedding celebration.",
+    "description": "This wedding project involved comprehensive floral styling across ceremony and reception spaces. We used premium flowers such as peonies, orchids, and garden roses to create grand arches, aisle arrangements, table centerpieces, and bridal florals. Our planning focused on harmony, scale, and elegance while ensuring the décor matched the couple’s vision perfectly. From concept development to final installation, every floral detail was executed with precision and care.",
+    "client_recommendation": "“FLWR made our wedding feel like a dream. The flowers were breathtaking and the service was flawless.”",
+    "fulfillment_details": [
+      "Complete wedding floral consultation",
+      "Custom floral mockups",
+      "Ceremony and reception installation",
+      "Bridal bouquet and aisle décor"
+    ],
+    "price": 4500,
+    "advance_booking": "Minimum 1 month advance booking required",
+    "image": "https://i.ibb.co.com/gMLQCxjH/event3.jpg"
+  },
+  {
+    "id": 4,
+    "eventType": "Baby Shower",
+    "title": "Soft & Dreamy Baby Shower Setup",
+    "short_description": "A gentle floral arrangement designed to welcome new beginnings.",
+    "description": "This baby shower event featured soft florals in pastel tones such as baby pink, lavender, and cream. Floral accents were paired with balloons and minimal décor to maintain a light and joyful environment. We carefully selected blooms that symbolized new life and happiness, creating a space that felt nurturing and elegant. Our team ensured every element aligned with the client’s vision for a calm and heartwarming celebration.",
+    "client_recommendation": "“The floral setup was beautiful and calming. It created the perfect atmosphere for our baby shower.”",
+    "fulfillment_details": [
+      "Theme-based floral planning",
+      "Pastel flower selection",
+      "Backdrop and table décor setup",
+      "On-site coordination"
+    ],
+    "price": 750,
+    "advance_booking": "Minimum 1 month advance booking required",
+    "image": "https://i.ibb.co.com/Dy1BhMX/event4.jpg"
+  },
+  {
+    "id": 5,
+    "eventType": "Proposal",
+    "title": "Luxury Romantic Proposal Setup",
+    "short_description": "A thoughtfully styled floral setup designed for a once-in-a-lifetime proposal moment.",
+    "description": "This proposal setup focused on intimacy and emotional impact. We designed a floral pathway leading to a rose-filled centerpiece, complemented by soft lighting and minimal décor. Every detail was planned to create a magical and unforgettable moment. Our team ensured privacy, perfect timing, and flawless execution so the proposal could unfold seamlessly.",
+    "client_recommendation": "“FLWR helped me create the perfect proposal. Everything was beautifully planned and executed.”",
+    "fulfillment_details": [
+      "Private proposal concept design",
+      "Romantic floral installation",
+      "Lighting and ambiance setup",
+      "Discreet coordination and support"
+    ],
+    "price": 1200,
+    "advance_booking": "Minimum 1 month advance booking required",
+    "image": "https://i.ibb.co.com/CKpj3NMp/event5.jpg"
+  },
+  {
+    "id": 6,
+    "eventType": "Corporate Event",
+    "title": "Modern Corporate Floral Styling",
+    "short_description": "Professional floral décor designed to enhance brand presence and event ambiance.",
+    "description": "This corporate event required a clean, modern floral design that aligned with the brand’s identity. We used neutral florals, greenery, and structured arrangements to maintain a polished and professional look. The décor enhanced the space without overpowering it, making it suitable for networking and presentations. Our team managed everything from planning to execution, ensuring the event reflected sophistication and attention to detail.",
+    "client_recommendation": "“The floral arrangements elevated our corporate event and matched our brand perfectly.”",
+    "fulfillment_details": [
+      "Brand-aligned floral design",
+      "Minimal and modern arrangements",
+      "Venue-wide installation",
+      "Timely setup and breakdown"
+    ],
+    "price": 2200,
+    "advance_booking": "Minimum 1 month advance booking required",
+    "image": "https://i.ibb.co.com/GyJxzX9/event6.jpg"
+  }
+]

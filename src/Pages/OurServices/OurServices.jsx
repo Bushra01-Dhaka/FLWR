@@ -3,6 +3,7 @@ import PlantCollections from "../Home/Plants/PlantCollections";
 import FlowerCollection from "../FlowerCollection/FlowerCollection";
 import GiftCardsCollection from "../GiftCardsCollection/GiftCardsCollection";
 import HamperCollections from "../HamperCollections/HamperCollections";
+import EventsCollection from "../EventsCollection/EventsCollection";
 
 const OurServices = () => {
   return (
@@ -24,7 +25,7 @@ const OurServices = () => {
              <FlowerCollection></FlowerCollection>
           </TabPanel>
           <TabPanel>
-            <h2>All Events data will show here</h2>
+            <EventsCollection></EventsCollection>
           </TabPanel>
           <TabPanel>
             <PlantCollections></PlantCollections>
