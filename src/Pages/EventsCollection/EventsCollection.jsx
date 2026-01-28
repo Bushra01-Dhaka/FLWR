@@ -5,7 +5,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import useAxiosSecure from "../../Hook/useAxiosSecure";
-
+import { Link } from "react-router";
 
 const EventsCollection = () => {
   const axiosSecure = useAxiosSecure();
@@ -19,15 +19,15 @@ const EventsCollection = () => {
   });
 
   if (isLoading) {
-    return (
-      <div className="py-20 text-center info ">Loading events...</div>
-    );
+    return <div className="py-20 text-center info ">Loading events...</div>;
   }
 
   return (
-    <section 
-     data-aos="fade-up" data-aos-duration="1500"
-    className="bg-accent text-info py-20 px-6 lg:px-20">
+    <section
+      data-aos="fade-up"
+      data-aos-duration="1500"
+      className="bg-accent text-info py-20 px-6 lg:px-20"
+    >
       {/* Header */}
       <div className="text-center mb-14">
         <h2 className="text-4xl font-outfit font-bold info ">
@@ -78,18 +78,18 @@ const EventsCollection = () => {
 
               <h3 className="text-xl font-semibold mb-2">{event.title}</h3>
 
-              <p className="text-sm info /70 mb-4">
-                {event.short_description}
-              </p>
+              <p className="text-sm info /70 mb-4">{event.short_description}</p>
 
               <div className="flex justify-between items-center">
                 {/* <span className="text-xs italic info /60">
                   {event.advance_booking}
                 </span> */}
 
-                <button className="px-4 py-2 text-sm font-semibold rounded-full bg-secondary text-primary hover:bg-secondary/90 transition">
-                  View Details
-                </button>
+                <Link to={`/events/${event._id}`}>
+                  <button className="px-4 py-2 text-sm font-semibold rounded-full bg-secondary text-primary hover:bg-secondary/90 transition">
+                    View Details
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

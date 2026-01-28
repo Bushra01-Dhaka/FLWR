@@ -6,6 +6,7 @@ import Register from "../Pages/Register/Register";
 import Login from "../Pages/Login/Login";
 import ContactUs from "../Pages/ContactUs/ContactUs";
 import OurServices from "../Pages/OurServices/OurServices";
+import EventDetails from "../Pages/EventDetails/EventDetails";
 
 export const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ export const router = createBrowserRouter([
           path:"/ourServices",
           Component: OurServices,
         },
+        {
+          path:"/events/:id",
+          Component:EventDetails
+        }
        
     ]
   },
