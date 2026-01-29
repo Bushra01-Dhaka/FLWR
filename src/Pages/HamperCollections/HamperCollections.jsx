@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import useAxiosSecure from "../../Hook/useAxiosSecure";
+import { Link } from "react-router";
 
 
 const HamperCollections = () => {
@@ -33,7 +34,7 @@ const HamperCollections = () => {
 
   return (
     <section 
-     data-aos="fade-up" data-aos-duration="1500"
+    //  data-aos="fade-up" data-aos-duration="1500"
     className="py-20 bg-blue-950 text-secondary px-6 lg:px-20">
       {/* Section Header */}
       <div className="text-center max-w-2xl mx-auto mb-14">
@@ -49,8 +50,10 @@ const HamperCollections = () => {
       {/* Hampers Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {hampers.slice(0, visibleCount).map((hamper) => (
+          <Link 
+           key={hamper.id}
+          to={`/hampers/${hamper._id}`}>
           <div
-            key={hamper.id}
             className="
               group rounded-2xl overflow-hidden
               bg-white/10 backdrop-blur-lg
@@ -92,6 +95,7 @@ const HamperCollections = () => {
               </div>
             </div>
           </div>
+          </Link>
         ))}
       </div>
 

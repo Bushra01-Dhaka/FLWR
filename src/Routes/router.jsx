@@ -7,6 +7,7 @@ import Login from "../Pages/Login/Login";
 import ContactUs from "../Pages/ContactUs/ContactUs";
 import OurServices from "../Pages/OurServices/OurServices";
 import EventDetails from "../Pages/EventDetails/EventDetails";
+import EachHamperDetails from "../Pages/EachHamperDetails/EachHamperDetails";
 
 export const router = createBrowserRouter([
   {
@@ -39,7 +40,11 @@ export const router = createBrowserRouter([
         },
         {
           path:"/events/:id",
-          Component:EventDetails
+          Component:EventDetails,
+        },
+        {
+          path:"/hampers/:id",
+          Component: EachHamperDetails,
         }
        
     ]

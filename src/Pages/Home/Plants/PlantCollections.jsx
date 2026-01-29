@@ -35,7 +35,7 @@ const PlantCollections = () => {
 
   return (
     <section 
-     data-aos="fade-up" data-aos-duration="1500"
+    //  data-aos="fade-up" data-aos-duration="1500"
     className="py-20 bg-primary text-secondary px-6 lg:px-20">
       {/* Section Header */}
       <div className="text-center max-w-2xl mx-auto mb-14">

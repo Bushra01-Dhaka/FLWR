@@ -32,7 +32,7 @@ const GiftCardsCollection = () => {
 
   return (
     <section 
-     data-aos="fade-up" data-aos-duration="1500"
+    //  data-aos="fade-up" data-aos-duration="1500"
     className="py-20 bg-linear-to-r from-red-900 to-red-800 text-secondary px-6 lg:px-20">
       {/* Header */}
       <div className="text-center max-w-2xl mx-auto mb-14">
