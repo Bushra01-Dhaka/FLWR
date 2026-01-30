@@ -8,6 +8,9 @@ import ContactUs from "../Pages/ContactUs/ContactUs";
 import OurServices from "../Pages/OurServices/OurServices";
 import EventDetails from "../Pages/EventDetails/EventDetails";
 import EachHamperDetails from "../Pages/EachHamperDetails/EachHamperDetails";
+import FlowerDetails from "../Pages/FlowerDetails/FlowerDetails";
+import PlantDetails from "../Pages/PlantDetails/PlantDetails";
+import CardDetails from "../Pages/GiftCardDetails/CardDetails";
 
 export const router = createBrowserRouter([
   {
@@ -45,6 +48,18 @@ export const router = createBrowserRouter([
         {
           path:"/hampers/:id",
           Component: EachHamperDetails,
+        },
+        {
+          path:"/bouquets/:id",
+          Component:FlowerDetails,
+        },
+        {
+          path:"/plants/:id",
+          Component:PlantDetails,
+        },
+        {
+          path:"/cards/:id",
+          Component:CardDetails,
         }
        
     ]

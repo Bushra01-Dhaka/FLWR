@@ -4,6 +4,7 @@ import FlowerCollection from "../FlowerCollection/FlowerCollection";
 import GiftCardsCollection from "../GiftCardsCollection/GiftCardsCollection";
 import HamperCollections from "../HamperCollections/HamperCollections";
 import EventsCollection from "../EventsCollection/EventsCollection";
+import { ScrollRestoration } from "react-router";
 
 const OurServices = () => {
   return (
@@ -38,6 +39,7 @@ const OurServices = () => {
           </TabPanel>
         </Tabs>
       </div>
+     <ScrollRestoration/>
     </div>
   );
 };

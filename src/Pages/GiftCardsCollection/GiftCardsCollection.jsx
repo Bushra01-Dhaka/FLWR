@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import useAxiosSecure from "../../Hook/useAxiosSecure";
+import { Link } from "react-router";
 
 const GiftCardsCollection = () => {
   const axiosSecure = useAxiosSecure();
@@ -48,8 +49,10 @@ const GiftCardsCollection = () => {
       {/* Cards Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {cards.slice(0, visibleCount).map((card) => (
-          <div
-            key={card.id}
+          <Link    key={card.id}
+          to={`/cards/${card._id}`}
+          >
+            <div
             className="
               group rounded-2xl overflow-hidden
               bg-white/10 backdrop-blur-lg
@@ -91,6 +94,7 @@ const GiftCardsCollection = () => {
               </div>
             </div>
           </div>
+          </Link>
         ))}
       </div>
 
