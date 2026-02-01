@@ -19,7 +19,11 @@ const EventsCollection = () => {
   });
 
   if (isLoading) {
-    return <div className="py-20 text-center info ">Loading events...</div>;
+    return (
+      <div className="flex justify-center items-center min-h-[100vh]">
+        <span className="loading loading-infinity loading-xl "></span>
+      </div>
+    );
   }
 
   return (

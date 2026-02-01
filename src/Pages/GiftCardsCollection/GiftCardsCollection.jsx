@@ -17,9 +17,9 @@ const GiftCardsCollection = () => {
 
   if (isLoading) {
     return (
-      <section className="py-20 bg-info text-secondary text-center">
-        <p className="text-lg">Loading gift cards...</p>
-      </section>
+    <div className="flex justify-center items-center min-h-[100vh]">
+        <span className="loading loading-infinity loading-xl "></span>
+      </div>
     );
   }
 

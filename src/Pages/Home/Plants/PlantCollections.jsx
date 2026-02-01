@@ -20,9 +20,9 @@ const PlantCollections = () => {
 
   if (isLoading) {
     return (
-      <section className="py-20 text-center">
-        <p className="text-lg">Loading plants...</p>
-      </section>
+      <div className="flex justify-center items-center min-h-[100vh]">
+        <span className="loading loading-infinity loading-xl "></span>
+      </div>
     );
   }
 
